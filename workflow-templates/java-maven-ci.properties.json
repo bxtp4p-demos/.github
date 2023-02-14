@@ -3,9 +3,7 @@
     "description": "Bxtp4pCorp Java Maven CI starter workflow.",
     "iconName": "octicon workflow-24",
     "categories": [
-	    "continuous-integration",
-	    "Java",
-	    "Maven"
+	    "continuous-integration"
     ],
     "filePatterns": [
         "pom.xml$"
