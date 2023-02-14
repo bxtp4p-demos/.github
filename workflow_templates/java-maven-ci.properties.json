@@ -1,0 +1,13 @@
+{
+    "name": "Bxtp4pCorp Java Maven CI",
+    "description": "Bxtp4pCorp Java Maven CI starter workflow.",
+    "iconName": "octicon workflow-24",
+    "categories": [
+				"continuous-integration",
+        "Java",
+				"Maven"
+    ],
+    "filePatterns": [
+        "pom.xml$"
+    ]
+}
