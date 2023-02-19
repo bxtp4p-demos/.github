@@ -20,6 +20,9 @@ inputs:
   image:
     description: 'The full image name and tag to deploy'
     required: true
+outputs:
+  webapp-url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
     
 defaults:
   run:
@@ -36,7 +39,7 @@ runs:
         subscription-id: ${{ inputs.subscription-id }}
 
     - name: Deploy to Azure App Service
-      id: deploy-backend-to-webapp
+      id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
         app-name: '${{ inputs.app-name }}'
